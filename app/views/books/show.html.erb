@@ -4,8 +4,13 @@
  </p>
 <% end %>
 
-<h4>Title:<%= @book.title %></h4>
-<h4>Body:<%= @book.body %></h4>
-<br>
-<%= link_to "Edit", edit_book_path(@book.id) %>|
+<p>
+ <strong>Title:</strong>
+ <%= @book.title %>
+ </p>
+<p>
+ <strong>Body:</strong>
+ <%= @book.body %>
+</p>
+<%= link_to "Edit", edit_book_path(@book.id) %> |
 <%= link_to "Back", '/books' %>
